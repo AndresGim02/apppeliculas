@@ -1,0 +1,13 @@
+
+    <div class="movie-card">
+        <div class="poster-container">
+            <img src="{{ getPoster() }}" [alt]="movie.Title" class="poster">
+        </div>
+        <div class="details-container">
+            <h3 class="title">{{movie.Title}}</h3>
+            <p class="year">{{movie.Year}}</p>
+            <span class="type">{{movie.Type}}</span>
+            <button (click)="getPelisId(movie.imdbID)" class="details-button">Detalles</button>
+        </div>
+    </div>
+

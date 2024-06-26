@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="content-container">
+        <div class="poster-container">
+            <img src="{{ getPoster() }}" [alt]="detalles.Title" class="poster">
+        </div>
+        <div class="details-container">
+            <p class="title">{{detalles.Title}}</p>
+            <h3 class="year">Year: {{detalles.Year}}</h3>
+            <h3 class="runtime">Runtime: {{detalles.Runtime}}</h3>
+            <h3 class="country">Country: {{detalles.Country}}</h3>
+            <h3 class="director">Director: {{detalles.Director}}</h3>
+            <h3 class="metascore">Metascore: {{detalles.Metascore}}</h3>
+            <h3 class="genre">Genre: {{detalles.Genre}}</h3>
+            <h3 class="plot">Plot: {{detalles.Plot}}</h3>
+            <button class="back-button" (click)= "Volver()">Volver</button>
+        </div>
+    </div>
+</div>

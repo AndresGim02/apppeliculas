@@ -1,0 +1,16 @@
+
+    <div class="search-container">
+        <h1>Búsqueda de Películas</h1>
+        <div class="input-container">
+            <input type="text" #busqueda placeholder="Introduce el nombre de la película" class="search-input">
+            <button (click)="getPeliculas(busqueda.value)" name="button" class="search-button">Buscar</button>
+        </div>
+        <div *ngIf="movie.length > 0; else vacio" class="results-container">
+            <app-tarjeta *ngFor="let movie of movie" [movie]="movie"></app-tarjeta>
+        </div>
+        <ng-template #vacio class="no-results">
+            <h3>No hay resultados</h3>
+        </ng-template>
+    </div>
+
+

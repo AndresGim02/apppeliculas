@@ -1,0 +1,77 @@
+
+
+body {
+    font-family:Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: none;
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster-container {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.poster {
+    max-width: 100%;
+    height: auto;
+}
+
+.details-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.metascore, .plot, .director, .country, .genre, .runtime, .year {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.back-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.back-button:hover {
+    background-color: #333;
+}
